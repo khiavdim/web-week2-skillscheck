@@ -26,7 +26,7 @@ const faveColors = ['white', 'tomato', 'blue']
 // CODE HERE
 const me = {
     firstName: 'KhiavDim',
-    superHeroName: 'Mistress Awkward',
+    superHeroName: 'Mistress K',
     homeTown: 'Fresno',
     superPowers: ['organizing', 'flying', 'being awkward'],
     superPowersXP: function(){
@@ -60,7 +60,6 @@ function setColor(arr){
         arr.splice(arr.length+3, arr.length)
     }
     
-    console.log(me.superPowers)
     for (let i = 0; i <= arr.length; i++){
         if (arr[i] === 'blue'){
             arr[i] = '#4d4dff'
