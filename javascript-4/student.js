@@ -29,10 +29,10 @@ const me = {
     superHeroName: 'Mistress K',
     homeTown: 'Fresno',
     superPowers: ['organizing', 'flying', 'being awkward'],
-    superPowersXP: function(){
-        return Math.floor(Math.random()*100)+1},
+    superPowerXP: function(){
+        return Math.floor(Math.random() * 100) + 1},
     profileImage: function(){
-        return 'https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random()*10)+1}.jpg'}
+        return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`}
 }
 
 //////////////////Step 3////////////////////
@@ -77,7 +77,7 @@ function setColor(arr){
 
 // CODE HERE
 function setPowers(arr){
-    for (let i = 0; i <= arr.length; i++){
+    for (let i = 0; i < arr.length; i++){
         createLi(arr[i])
     }
 }
@@ -92,7 +92,7 @@ function setPowers(arr){
 // CODE HERE
 function redactInfo(obj){
     for (let key in obj){
-        obj.key = 'redacted'
+        obj[key] = 'redacted'
     }
     redacted()
 }
